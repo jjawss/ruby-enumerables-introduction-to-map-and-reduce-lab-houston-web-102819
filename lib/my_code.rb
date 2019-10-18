@@ -49,16 +49,15 @@ def reduce_to_all_true(source_array)
   counter = 0 
   while source_array[counter]
     if source_array[counter] == true
-      puts false
-      return false
+      return counter
     else
       counter += 1
     end
   end
   if counter < source_array.length
-    return source_array
+    return counter
   else
-    return (source_array) 
+    return counter 
   end
 end    
 
