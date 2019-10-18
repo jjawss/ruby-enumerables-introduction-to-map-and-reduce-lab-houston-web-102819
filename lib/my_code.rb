@@ -55,7 +55,7 @@ def reduce_to_all_true(source_array)
     end
   end
   if counter < source_array.length
-    return counter
+    return false
   else
     return counter 
   end
