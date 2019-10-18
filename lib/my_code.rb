@@ -78,14 +78,5 @@ def reduce_to_any_true(source_array)
   return false
 end
     
-    
 
-    
-    
-    
-    
-    
-    
-    
-    
     
