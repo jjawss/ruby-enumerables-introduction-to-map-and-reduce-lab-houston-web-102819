@@ -61,25 +61,22 @@ def reduce_to_all_true(source_array)
   end
 end    
 
+#Need a loop inside a loop, adding one to counter as long as it is less than length of array. 
+
 def reduce_to_any_true(source_array)
-  counter = 0 
-  while source_array[counter]
-    if source_array[counter] == true
-      return true
-    else
-      counter += 1
-    end
-  end
-  if counter < source_array.length
+  counter = -1 
+  while counter < source_array.length
     counter += 1
     while source_array[counter]
       if source_array[counter] == true
         return true
       else
         counter += 1
-    return counter 
+      end
+    end
   end
-end      
+  return false
+end
     
     
 
